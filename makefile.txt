@@ -1,0 +1,10 @@
+
+
+README.md: guessinggame.sh
+	echo "Coursera Course for Unix Workbench. Need to submit this Peer Gradeded assignment" > README.md
+	echo "Name of the Project: GuessingGame.SH" >> README.md
+	echo "https://www.coursera.org/learn/unix/peer/VvQhw/bash-make-git-and-github" >>README.md
+	date >>README.md
+
+	echo "Requirement: code to be between 20 and 50 lines" >> README.md
+	wc -l guessinggame.sh  >> README.md
