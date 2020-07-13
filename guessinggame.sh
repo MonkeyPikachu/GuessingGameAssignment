@@ -4,6 +4,9 @@ echo $count
 echo " Please Enter  you guess for the numbe of files in the current directory"
 read  userGuess
 
+
+check_user_input()
+{
 while [[ $count -ne  $userGuess ]]; do
 	echo " Checking if your guess is correct or not???"
 	if [[ $count -lt $userGuess ]]
@@ -22,6 +25,7 @@ while [[ $count -ne  $userGuess ]]; do
 	    exit
 	fi
 done
+}
 
-
-echo "Correct answer good'
+#Call Fubnction
+check_user_input
